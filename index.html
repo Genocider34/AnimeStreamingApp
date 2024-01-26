@@ -12,21 +12,30 @@
     referrerpolicy="no-referrer"
   />
   <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="nav.css" />
   <body>
     <header>
-      <div class="dropdown">
-        <i class="fa-solid fa-bars"></i>
-        <button>Anime HD</button>
-      </div>
-      <div class="search-bar">
-        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-        <input type="text" placeholder="Search..." />
-      </div>
+      <nav>
+        <div class="title-nav-container">
+          <h1>Watch A</h1>
+          <div class="dropdown">
+            Browse<i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+        <div class="search-profile-container">
+          <input type="text" />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="profile"
+          />
+        </div>
+      </nav>
     </header>
-    <div class="movie-list"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="list.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="list.js"></script> -->
   </body>
 </html>

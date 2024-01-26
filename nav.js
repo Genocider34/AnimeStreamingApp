@@ -33,6 +33,15 @@ function displayImg(img) {
   newImg.src = img;
   movieContainer.appendChild(newImg);
 }
+
+const bars = document.querySelector(".fa-bars");
+function navBar() {
+  bars.addEventListener("click", () => {
+    bars.classList.toggle("active");
+  });
+}
+
+navBar();
 // Demo only
 anime(21);
 anime(11061);
