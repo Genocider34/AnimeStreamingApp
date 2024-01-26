@@ -82,12 +82,18 @@ h1 {
 }
 
 input {
-  display: none;
+  /* display: none; */
+  position: relative;
+  color: white;
   height: 15px;
   margin-right: 0.5rem;
-  background-color: var(--background);
   border: none;
   border-bottom: 1px black solid;
+}
+
+input::before {
+  position: absolute;
+  content: "";
 }
 
 .search-icon {
@@ -110,4 +116,12 @@ input {
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
+}
+
+.border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid var(--secondary);
+  width: 80%;
 }
