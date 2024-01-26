@@ -20,11 +20,14 @@ const anime = async (id) => {
 };
 
 function displayImg(img, card) {
-  card.forEach((x) => {
-    const imgCard = document.createElement("IMG");
-    imgCard.src = img;
-    x.appendChild(imgCard);
+  card.forEach((item) => {
+    for (let x in item) {
+      const imgCard = document.createElement("IMG");
+      imgCard.src = img;
+      item[x].appendChild(imgCard);
+    }
   });
 }
 
 anime(21);
+// anime(11061);
