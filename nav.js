@@ -1,11 +1,10 @@
-const anime = async (id) => {
-  const card = [
-    {
-      card1: document.querySelector(".card-1"),
-      card2: document.querySelector(".card-2"),
-    },
-  ];
+// 1. Create object consist of divs '.card-#'
+const card = {
+  card1: document.querySelector(".card-1"),
+  card2: document.querySelector(".card-2"),
+};
 
+const anime = async (id) => {
   try {
     const res = await axios.get(`https://api.jikan.moe/v4/anime/${id}`);
     const information = {
@@ -13,21 +12,27 @@ const anime = async (id) => {
       img: res.data.data.images.jpg.image_url,
     };
 
-    displayImg(information.img, card);
+    Object.keys(card).forEach((key) => {
+      const imgCreated = document.createElement("img");
+      imgCreated.src = information.img;
+      card[key].appendChild(imgCreated);
+    });
+    // const keys = Object.keys(card);
+    // const imgCreated = document.createElement("IMG");
+    // imgCreated.src = information.img;
+    // keys.appendChild(imgCreated);
+    // console.log(keys);
+    // displayImg(information.img, card.keys);
   } catch (e) {
     console.log("error", e);
   }
 };
 
-function displayImg(img, card) {
-  card.forEach((item) => {
-    for (let x in item) {
-      const imgCard = document.createElement("IMG");
-      imgCard.src = img;
-      item[x].appendChild(imgCard);
-    }
-  });
-}
+// function displayImg(img, card) {
+//   const imgCreated = document.createElement("IMG");
+//   imgCreated.src = img;
+//   card.appendChild(imgCreated);
+// }
 
 anime(21);
-// anime(11061);
+anime(51535);

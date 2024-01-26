@@ -19,13 +19,23 @@ h2 {
 }
 
 .card-list {
-  border-radius: 10px;
   display: grid;
   justify-content: space-around;
   grid-template-columns: repeat(4, 225px);
   height: 335px;
   grid-gap: 10px;
   grid-auto-rows: minmax(auto, auto);
+}
+
+.card:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.card img {
+  border-radius: 10px;
+}
+.card {
+  border-radius: 10px;
 }
 
 .card-1 {
