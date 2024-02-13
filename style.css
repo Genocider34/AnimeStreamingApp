@@ -1,0 +1,82 @@
+/* .roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  border: 1px solid goldenrod;
+  background-color: black;
+}
+
+h1 {
+  margin: 0 20px;
+}
+
+.header-block {
+  display: flex;
+  margin: 20px 10px;
+  align-items: center;
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+}
+
+.search-block {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+#search-bar {
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: black;
+  width: 180px;
+  height: 15px;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+}
+
+.icon-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 100px;
+  background-color: white;
+}
+
+.fa-magnifying-glass {
+  margin-right: 10px;
+  color: black;
+}
+
+#filter-btn {
+  padding: 5px 10px;
+  background-color: black;
+  border: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
