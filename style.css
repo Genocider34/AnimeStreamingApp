@@ -85,10 +85,33 @@ form {
 }
 
 #language {
+  font-size: 0.8rem;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-around; */
   width: 50px;
   height: 20px;
   background-color: rgb(25, 130, 171);
-  border-radius: 5px;
+  /* border-radius: 5px; */
+}
+
+.select-EN {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 100%;
+}
+
+.select-JP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 100%;
+  background-color: gray;
+
+  /* border-radius: 5px; */
 }
 
 #login-btn {
@@ -126,4 +149,9 @@ form {
 
 .nav span:hover {
   color: rgb(25, 130, 171);
+}
+
+.img-block img {
+  opacity: 0.3;
+  box-shadow: 2px, 4px, 5px rgb(0, 0, 0, 0.3);
 }
