@@ -1,37 +1,34 @@
-/* .roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+:root {
+  --search-list-color: rgb(46, 45, 46);
 }
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-} */
 
 * {
   box-sizing: border-box;
-  color: white;
+  /* color: white; */
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: rgb(36, 36, 40);
 }
 
 header {
-  border: 1px solid goldenrod;
-  background-color: black;
-}
-
-h1 {
-  margin: 0 20px;
+  color: white;
+  border: 1px solid black;
+  background-color: transparent;
+  /* box-shadow: 0 10px 10px rgb(0, 0, 0, 0.5); */
+  padding: 10px 25px;
 }
 
 .header-block {
   display: flex;
-  margin: 20px 10px;
   align-items: center;
+}
+
+#logo {
+  margin: 0 20px;
+  height: 20px;
+  width: 120px;
 }
 
 .fa-bars {
@@ -48,35 +45,85 @@ h1 {
   font-family: inherit;
   font-size: 0.8rem;
   color: black;
-  width: 180px;
+  width: 200px;
   height: 15px;
-  padding: 15px 10px;
+  padding: 15px 15px;
   border: none;
   outline: none;
 }
 
-.icon-filter-container {
+form {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 35px;
-  width: 100px;
-  background-color: white;
 }
-
 .fa-magnifying-glass {
   margin-right: 10px;
   color: black;
 }
 
 #filter-btn {
-  padding: 5px 10px;
-  background-color: black;
+  color: inherit;
+  font-size: 0.7rem;
+  padding: 5px 5px;
+  background-color: rgb(51, 51, 51);
   border: none;
+  border-radius: 5px;
+  margin-right: 5px;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.nav i,
+.nav #language {
+  margin-bottom: 5px;
+}
+
+#language {
+  width: 50px;
+  height: 20px;
+  background-color: rgb(25, 130, 171);
+  border-radius: 5px;
+}
+
+#login-btn {
+  background-color: rgb(25, 130, 171);
+  border: none;
+  padding: 10px 15px;
+  margin-left: auto;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 700;
+  color: inherit;
+}
+
+.fa-bars,
+#logo,
+.fa-magnifying-glass,
+#filter-btn,
+.nav,
+#login-btn {
+  cursor: pointer;
+}
+
+#login-btn:focus,
+#filter-btn:focus {
+  outline: none;
+}
+
+#filter-btn:hover {
+  opacity: 0.9;
+}
+
+.nav i {
+  color: rgb(25, 130, 171);
+}
+
+.nav span:hover {
+  color: rgb(25, 130, 171);
 }

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Watch Pīsu</title>
+    <link rel="icon" href="images/sh.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,19 +17,20 @@
       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
     </style>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="spotlight.css" />
   </head>
   <body>
     <header>
       <div class="header-block">
         <i class="fa-solid fa-bars"></i>
-        <h1>Watch Pisu</h1>
+        <img id="logo" src="images/logo.png" alt="" />
 
         <div class="search-block">
-          <input id="search-bar" type="text" placeholder="Search..." />
-          <div class="icon-filter-container">
+          <form action="">
+            <input id="search-bar" type="text" placeholder="Search..." />
             <i class="fa-solid fa-magnifying-glass"></i>
-            <button id="filter-btn">Filter</button>
-          </div>
+          </form>
+          <button id="filter-btn">Filter</button>
         </div>
 
         <div class="random-btn nav">
@@ -38,7 +40,7 @@
 
         <div class="language-btn nav">
           <div id="language"></div>
-          <span>Change Language</span>
+          <span>Language</span>
         </div>
 
         <div class="community-btn nav">
@@ -49,6 +51,37 @@
         <button id="login-btn">Login</button>
       </div>
     </header>
+
+    <!-- Spotlight  -->
+
+    <main>
+      <div class="img-block">
+        <!-- <img src="images/one-piece.jpg" alt="" /> -->
+        <div id="info-block">
+          <h1>One Piece</h1>
+          <div class="info-status">
+            <i class="fa-solid fa-circle-play"></i><span>TV</span>
+            <i class="fa-solid fa-clock"></i><span>23m</span>
+            <i class="fa-solid fa-calendar"></i><span>January 1, 2000</span>
+          </div>
+          <div class="info-summary">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+              saepe provident, earum, laborum, aspernatur voluptatum natus quia
+              iusto autem architecto asperiores odit consequuntur totam nostrum
+              eaque quos repellat recusandae ratione.
+            </p>
+          </div>
+          <button id="watch-btn">
+            <i class="fa-solid fa-circle-play"></i> Watch Now
+          </button>
+          <button id="detail-btn">
+            Detail <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
