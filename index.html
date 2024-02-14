@@ -63,40 +63,132 @@
     <!-- Spotlight  -->
 
     <main>
-      <div class="img-block">
-        <img id="spotlight-img" src="images/one-piece.jpg" alt="" />
-        <div id="info-block">
-          <h1>One Piece</h1>
-          <div class="info-status">
-            <i class="fa-solid fa-circle-play"></i><span>TV</span>
-            <i class="fa-solid fa-clock"></i><span>23m</span>
-            <i class="fa-solid fa-calendar"></i><span>January 1, 2000</span>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img id="spotlight-img" src="images/one-piece.jpg" alt="" />
+            <div class="info-block">
+              <h1>One Piece</h1>
+              <div class="info-status">
+                <i class="fa-solid fa-circle-play"></i><span>TV</span>
+                <i class="fa-solid fa-clock"></i><span>23m</span>
+                <i class="fa-solid fa-calendar"></i><span>January 1, 2000</span>
+              </div>
+              <div class="info-summary">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Velit saepe provident, earum, laborum, aspernatur voluptatum
+                  natus quia iusto autem architecto asperiores odit consequuntur
+                  totam nostrum eaque quos repellat recusandae ratione.
+                </p>
+              </div>
+              <button id="watch-btn">
+                <i class="fa-solid fa-circle-play"></i> Watch Now
+              </button>
+              <button id="detail-btn">
+                Detail <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
           </div>
-          <div class="info-summary">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-              saepe provident, earum, laborum, aspernatur voluptatum natus quia
-              iusto autem architecto asperiores odit consequuntur totam nostrum
-              eaque quos repellat recusandae ratione.
-            </p>
-          </div>
-          <button id="watch-btn">
-            <i class="fa-solid fa-circle-play"></i> Watch Now
-          </button>
-          <button id="detail-btn">
-            Detail <i class="fa-solid fa-angle-right"></i>
-          </button>
 
-          <div class="swipe-block">
+          <div class="swiper-slide">
+            <img src="images/aot.jpg" alt="" />
+            <div class="info-block">
+              <h1>Attack on Titan</h1>
+              <div class="info-status">
+                <i class="fa-solid fa-circle-play"></i><span>TV</span>
+                <i class="fa-solid fa-clock"></i><span>23m</span>
+                <i class="fa-solid fa-calendar"></i><span>January 1, 2000</span>
+              </div>
+              <div class="info-summary">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Velit saepe provident, earum, laborum, aspernatur voluptatum
+                  natus quia iusto autem architecto asperiores odit consequuntur
+                  totam nostrum eaque quos repellat recusandae ratione.
+                </p>
+              </div>
+              <button id="watch-btn">
+                <i class="fa-solid fa-circle-play"></i> Watch Now
+              </button>
+              <button id="detail-btn">
+                Detail <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/hxh.jpg" alt="" />
+            <div class="info-block">
+              <h1>Hunter x Hunter</h1>
+              <div class="info-status">
+                <i class="fa-solid fa-circle-play"></i><span>TV</span>
+                <i class="fa-solid fa-clock"></i><span>23m</span>
+                <i class="fa-solid fa-calendar"></i><span>January 1, 2000</span>
+              </div>
+              <div class="info-summary">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Velit saepe provident, earum, laborum, aspernatur voluptatum
+                  natus quia iusto autem architecto asperiores odit consequuntur
+                  totam nostrum eaque quos repellat recusandae ratione.
+                </p>
+              </div>
+              <button id="watch-btn">
+                <i class="fa-solid fa-circle-play"></i> Watch Now
+              </button>
+              <button id="detail-btn">
+                Detail <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <!-- Slider main container -->
+      <!-- <div class="swiper"> -->
+      <!-- Additional required wrapper -->
+      <!-- <div class="swiper-wrapper"> -->
+      <!-- Slides -->
+      <!-- <div class="swiper-slide"> -->
+      <!-- <div class="img-block"> -->
+      <!-- <img id="spotlight-img" src="images/one-piece.jpg" alt="" /> -->
+
+      <!-- <div class="swiper-slide">
+                <img src="images/aot.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">Slide 3</div>
+            </div> -->
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div> -->
+
+      <!-- <div class="swipe-block">
             <button id="right-swipe">
               <i class="fa-solid fa-angle-right"></i>
             </button>
             <button id="left-swipe">
               <i class="fa-solid fa-angle-left"></i>
             </button>
-          </div>
-        </div>
-      </div>
+          </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
