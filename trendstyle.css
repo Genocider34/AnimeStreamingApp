@@ -1,0 +1,20 @@
+.trends {
+  color: rgb(25, 130, 171);
+}
+
+.trends h2 {
+  margin: 25px;
+  font-size: 1.5rem;
+}
+
+.list-trending {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 5px;
+  background-color: teal;
+  width: 100px;
+  height: 100px;
+}
+
+.trend-one {
+}
