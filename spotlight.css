@@ -1,3 +1,6 @@
+.spotlight {
+  font-size: 2rem;
+}
 
 .swiper-slide img {
   height: 500px;
@@ -13,28 +16,28 @@
   color: white;
   position: absolute;
   width: 650px;
-  top: 200px;
+  top: 150px;
   left: 50px;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .info-status {
-  margin: 20px 0;
+  margin: 1em 0;
 }
 
 .info-status span {
-  margin-right: 10px;
+  margin-right: 1em;
 }
 
 .info-status i {
-  margin-right: 5px;
+  margin-right: 0.5em;
 }
 
 .info-summary {
-  margin-bottom: 30px;
+  margin-bottom: 1em;
 }
 
 .info-summary p {
@@ -44,7 +47,7 @@ h1 {
 #watch-btn,
 #detail-btn {
   border: none;
-  padding: 10px 20px;
+  padding: 1em 2em;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -56,7 +59,7 @@ h1 {
 
 #watch-btn {
   background-color: rgb(25, 130, 171);
-  margin-right: 10px;
+  margin-right: 1em;
 }
 #detail-btn {
   background-color: gray;
@@ -68,7 +71,7 @@ h1 {
   justify-content: center;
 }
 
-#right-swipe,
+/* #right-swipe,
 #left-swipe {
   position: relative;
   width: 40px;
@@ -82,4 +85,4 @@ h1 {
   margin: 5px 0;
   border: 0;
   cursor: pointer;
-}
+} */

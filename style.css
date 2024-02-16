@@ -7,6 +7,10 @@
   /* color: white; */
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   width: 100%;
   margin-inline: auto;
@@ -20,7 +24,7 @@ header {
   /* border: 1px solid black; */
   background-color: transparent;
   /* box-shadow: 0 10px 10px rgb(0, 0, 0, 0.5); */
-  padding: 10px 25px;
+  padding: 1em 2.5em;
 }
 
 .header-block {
@@ -29,13 +33,12 @@ header {
 }
 
 #logo {
-  margin: 0 20px;
-  height: 20px;
+  margin: 0 2em;
   width: 120px;
 }
 
 .fa-bars {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .search-block {
@@ -46,11 +49,11 @@ header {
 
 #search-bar {
   font-family: inherit;
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   color: black;
   width: 200px;
   height: 15px;
-  padding: 15px 15px;
+  padding: 1em 1em;
   border: none;
   outline: none;
 }
@@ -60,35 +63,36 @@ form {
   align-items: center;
 }
 .fa-magnifying-glass {
-  margin-right: 10px;
+  margin-right: 1em;
   color: black;
 }
 
 #filter-btn {
   color: inherit;
-  font-size: 0.7rem;
-  padding: 5px 5px;
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
   background-color: rgb(51, 51, 51);
   border: none;
-  border-radius: 5px;
-  margin-right: 5px;
+  border-radius: 3px;
+  margin-right: 0.5em;
 }
 
 .nav {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 30px;
+  margin-left: 3em;
 }
 
 .nav i,
 .nav #language {
-  margin-bottom: 5px;
+  margin-bottom: 0.5em;
 }
 
 #language {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   display: flex;
   /* align-items: center; */
   /* justify-content: space-around; */
@@ -120,7 +124,7 @@ form {
 #login-btn {
   background-color: rgb(25, 130, 171);
   border: none;
-  padding: 10px 15px;
+  padding: 1em 1.5em;
   margin-left: auto;
   border-radius: 5px;
   font-family: inherit;
