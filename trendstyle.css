@@ -10,14 +10,17 @@
 .list-trending {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 1em;
+  grid-gap: 5em;
   background-color: teal;
   width: 100px;
   height: 100px;
+  margin: 10em 15em;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .trend {
   background-color: teal;
   width: 200px;
-  height: 200px;
+  height: 250px;
 }
